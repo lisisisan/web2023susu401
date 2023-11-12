@@ -1,0 +1,129 @@
+.title {
+    margin: 76px auto 24px auto;
+    color: $active-black;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 44px;
+    font-weight: 900;
+    &_no-mg {
+        margin: 0;
+    }
+}
+.subtitle {
+    color: $active-black;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px; 
+    text-align: center;
+    margin-top: 24px;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding: 24px 0;
+    &__item {
+        margin-right: 48px;
+        padding: 32px;
+        border-radius: 24px;
+        background-color: $white;
+        width: 50%;
+        &:last-child {
+            margin-right: 0;
+        }
+        &_numbered {
+            display: flex;
+            justify-content: center;
+            padding-top: 56px;
+        }
+    }
+    &_with-icon {
+        background-color: $white;
+        margin-bottom: 44px;
+        img {
+            background-color: $white;
+        }
+    }
+    &__number {
+        position: absolute;
+        top: -4px;
+        background-color: $number-color;
+        color: $white;
+        text-align: center;
+        border-radius: 16px;
+        display: flex;
+        width: 56px;
+        height: 56px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    &__title {
+        background-color: $white;
+        padding-top: 32xp;
+        color: $active-black;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    &__descr {
+        position: relative;
+        background-color: $white;
+        color: $active-black;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px; 
+        p {
+            margin-top: 16px;
+            background-color: $white;
+        }
+        &_center {
+            text-align: center;
+        }
+    }
+    &__list {
+        margin-top: 12px;
+        list-style-type: none;
+        background-color: $white;
+        li {
+            position: relative;
+            margin-bottom: 12px;
+            color: $active-black;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px; 
+            background-color: $white;
+            // background: url('../../assets/icons/bullit.svg') no-repeat 0 0;
+            margin-left: 20px;
+            &::before {
+                content: '';
+                position: absolute;
+                left: -20px;
+                top: 10px;
+                display: block;
+                width: 12px;
+                height: 2px;
+                border-radius: 25%;
+                background-color: $active-black;
+            }
+        }
+    }
+}
+.cards__list#main-bg-color {
+    margin-top: 48px;
+    background-color: $bg-color;
+    li {
+        background-color: $bg-color;
+    }
+}
+.wrapper {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &_mt20 {
+        margin-top: 20px;
+        padding: 0;
+    }
+}
